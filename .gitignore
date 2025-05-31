@@ -1,0 +1,14 @@
+vendor/
+coverage/
+
+.idea/
+.vscode/
+
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+composer.lock
+
+.DS_Store
+example.php
+*.log

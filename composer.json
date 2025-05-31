@@ -1,0 +1,30 @@
+{
+  "name": "mmalyszko/vinfast-php",
+  "description": "Decode vehicle model and brand from a VIN number using a lightweight, local PHP library — no external API required.",
+  "type": "library",
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "friendsofphp/php-cs-fixer": "^3.75",
+    "phpstan/phpstan": "^1.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vinfast\\": "src/Vinfast/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vinfast\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "lint": "phpstan analyse src --level=5",
+    "test": "phpunit",
+    "test:cover": "XDEBUG_MODE=coverage phpunit --coverage-html coverage",
+    "format": "php-cs-fixer fix",
+    "format:check": "php-cs-fixer fix --dry-run --diff"
+  }
+}
