@@ -1,7 +1,8 @@
 {
   "name": "mmalyszko/vinfast-php",
-  "description": "Decode vehicle model and brand from a VIN number using a lightweight, local PHP library — no external API required.",
+  "description": "Lightweight VIN decoder for PHP 8+. Quickly decode vehicle brand, model, year, country, and region from a VIN — 100% local, no external API required.",
   "type": "library",
+  "license": "MIT",
   "require": {
     "php": "^8.0"
   },

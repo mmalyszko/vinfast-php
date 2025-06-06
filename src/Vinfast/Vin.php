@@ -3,8 +3,9 @@
 namespace Vinfast;
 
 /**
- * Lightweight VIN Decoder for PHP 8+
- * Decode vehicle model and brand from a VIN number using a lightweight, local library - no external API required.
+ * Lightweight VIN decoder for PHP 8+.
+ *
+ * Quickly decode vehicle brand, model, year, country, and region from a VIN — 100% local, no external API required.
  */
 class Vin
 {
@@ -87,6 +88,7 @@ class Vin
         '5L'  => 'Lincoln',
         'ZAM' => 'Maserati',
         'JMZ' => 'Mazda',
+        'JM1' => 'Mazda',
         '3MZ' => 'Mazda',
         '3MD' => 'Mazda',
         '4F'  => 'Mazda',
@@ -119,6 +121,7 @@ class Vin
         '1N'  => 'Nissan',
         '5N1' => 'Nissan',
         '3N'  => 'Nissan',
+        'VNV' => 'Nissan',
         'W0L' => 'Opel',
         'W0V' => 'Opel',
         'VF3' => 'Peugeot',
@@ -133,6 +136,7 @@ class Vin
         'YS3' => 'Saab',
         'VSS' => 'Seat',
         'TMB' => 'Skoda',
+        'WME' => 'Smart',
         'KPT' => 'SsangYong',
         'KPA' => 'SsangYong',
         'JF'  => 'Subaru',
@@ -154,6 +158,8 @@ class Vin
         '4T'  => 'Toyota',
         '2T'  => 'Toyota',
         'MR0' => 'Toyota',
+        'VXK' => 'Vauxhall',
+        'VXE' => 'Vauxhall',
         'WVW' => 'Volkswagen',
         'WVG' => 'Volkswagen',
         'WV1' => 'Volkswagen',
@@ -166,6 +172,7 @@ class Vin
         'YV4' => 'Volvo',
         '7JR' => 'Volvo',
         'XLB' => 'Volvo',
+        'LVY' => 'Volvo',
     ];
 
     private const REGIONS = [
